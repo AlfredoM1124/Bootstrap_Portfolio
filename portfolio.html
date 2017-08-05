@@ -1,24 +1,35 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<title>Alfredo's Portfolio</title>
 </head>
+
 <body>
 
-	<nav class="navbar navbar-inverse">
+	<!-- Static navbar -->
+	<nav class="navbar navbar-static-top navbar-inverse">
 		<div class="container">
 
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#"><h1>Alfredo Munoz</h1></a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+				aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Alfredo Munoz</a>
 			</div>
-			<div class="navbar navbar-collapse collapse">
+
+			<div id="navbar" class="navbar navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="about.html">About</a></li>
+					<li><a href="index.html">About</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
@@ -28,11 +39,12 @@
 
 		<!-- End Header Content - Begin Main Body -->
 
+	
 	<div class="container" id="mainContainer">
 		<div class="row">
 			<div class="col-lg-8 col-md-8 col-sm-10">
 				<div class="row">
-				<h2>Portfolio</h2>
+					<h2>Portfolio</h2>
 				</div>	
 					<div class="row">
 						<div class="col-sm-6">
@@ -67,15 +79,15 @@
 			</div>
 		</div>	
 	</div>
-</div>
+
 
 <!-- Begin Footer -->
 
-<section id="footer">
-
+<div class="row">
+	<div class="panel col-lg-12 col-md-12 col-sm-12 text-center panel-footer">
 	<p>&copy; Copyright 2017 Alfredo Munoz</p>
+	</div>
+</div>
 
-</section>
-	
 </body>
 </html>

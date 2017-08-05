@@ -5,71 +5,104 @@
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
 	<title>Alfredo's Portfolio</title>
+
 </head>
+
 <body>
 
+	<!-- Static navbar -->
+	<nav class="navbar navbar-static-top navbar-inverse">
+		<div class="container">
 
-<header>
-<div id="headerDiv">
-	<div id="nameSquare">
-		<h1 id="AlfredoM">Alfredo Munoz</h1>
-	</div>
-	<div id="nav">
-		<ul class="navLinks">
-			<li id="aboutNav"><a href="about.html">About</a></li>
-			<li id="portfolioNav"><a href="portfolio.html">Portfolio</a></li>
-			<li id="contactNav"><a href="contact.html">Contact</a></li>
-		</ul>
-	</div>
-</div>
-</header>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+				aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Alfredo Munoz</a>
+			</div>
+
+			<div id="navbar" class="navbar navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
 <!-- End Header Content - Begin Main Body -->
 
-<div id="fullWrap">
-	<section id="mainContent">
-		<div id="aboutMe">
-			<h2>Contact</h2>
-				<!-- Contact Form -->
-			<form>
-				<span>Name:</span>
-					<br>
-					<input id="nameField" type="text" name="Name">
-					<br>
-				<span>Email:</span>
-					<input id="emailField" type="text" name="Email Address">
-					<br>
-				<span>Message:</span>
-					<input id="messageField" type="text" name="message">
-					<br>
-					<input id="submitButton" type="submit" name="Submit">
-					<br>
+<div class="container" id="mainContainer">
+    <div class="row"> 
+      <div class="col-lg-8 col-md-8 col-sm-10"> 
+        <h2>Contact me</h2>
+        <form>
+          <div class="form-group for">  
+            <label for="inputName">Name</label>
+            <input class="form-control" type="text" id="inputName" 
+              placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input class="form-control" type="email" id="inputEmail" 
+              placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="selectSite">Favorite Site</label>
+            <select class="form-control" id="selectSite">
+              <option>Choose...</option>
+              <option>GitHub</option>
+              <option>Twitter</option>
+              <option>Youtube.com</option>
+              <option>LinkedIn</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="inputComments">Comments</label>
+            <textarea class="form-control" id="inputComments"></textarea>
+          </div>
 
-			</form>
+            <input class="btn btn-default pull-right" type="submit" value="submit">
+
+        </form>
 		
 		 <!-- Section -->
 
-		 </div>
-
-		<div id="connect">
-			<h2>Connect with Me:</h2>
-			<ul>
-				<li><a href="https://github.com/AlfredoM1124"><img class="smLogo" src="assets/images/GitHub64px.png" alt="Github"></a></li>
-				<li><a href="https://www.linkedin.com/in/AlfredoM1124/"><img class="smLogo" src="assets/images/LinkedIn54px.png" alt="LinkedIn"></a></li>
-				<li><a href=https://stackoverflow.com/users/8262325/alfredo-munoz><img class="smLogo" src="assets/images/so-icon.png" alt="Stack Overflow"></a></li>
-			</ul>
+		 <div class="col-lg-4 col-md-4 col-sm-10 panel clearfix">
+			<div class="row">
+				<h3 class="lead text-center">Connect with Me:</h3>
+			</div>
+			<!-- Links to my various social media platforms -->
+			<div class="row">
+				<div class="col-lg-12 col-lg-offset-2 col-md-12 col-sm-10 col-sm-offset-2 col-xs-12 col-xs-offset-2">
+				<div class="col-lg-2 col-md-3 col-sm-4">
+				<a href="https://github.com/AlfredoM1124"><img class="pull-left" src="assets/images/GitHub64px.png" alt="Github" width="50px"></a>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-4">
+				<a href="https://www.linkedin.com/in/AlfredoM1124/"><img class="smLogo" src="assets/images/LinkedIn54px.png" alt="LinkedIn" width="50px"></a>
+				</div>
+				<div class="col-lg-4 col-lg-offset-2 col-md-3 col-sm-4 clearfix"">
+				<a href=https://stackoverflow.com/users/8262325/alfredo-munoz><img class="smLogo" src="assets/images/so-icon.png" alt="Stack Overflow" width="50px"></a>
+				</div>
+			</div>
 		</div>	
-	</section>
-</div>
+	</div>
+	
 
 <!-- Begin Footer -->
 
-<section id="footer">
-
-	<p>&copy; Copyright 2017 Alfredo Munoz</p>
-
-</section>
-	
+	<div class="row">
+		<div class="panel col-lg-12 col-md-12 col-sm-12 text-center panel-footer">
+		<p>&copy; Copyright 2017 Alfredo Munoz</p>
+		</div>
+	</div>
 </body>
 </html>
